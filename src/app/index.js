@@ -9,4 +9,4 @@ if (module.hot) {
 const container = document.body;
 
 // REVIEW: https://github.com/developit/preact/issues/24
-render(<App />, container, container.firstElementChild);
+render(<App />, container, container.lastElementChild);
