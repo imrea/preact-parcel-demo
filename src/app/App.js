@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import Lorem from '@app/scenes/Lorem';
+import Todos from '@app/scenes/Todos';
 
 class App extends Component {
   render() {
@@ -19,9 +20,13 @@ class App extends Component {
             <li>
               <Link to="/lorem">lorem</Link>
             </li>
+            <li>
+              <Link to="/todos">todos</Link>
+            </li>
           </ul>
           <Switch>
             <Route path="/lorem" component={Lorem} />
+            <Route path="/todos" component={Todos} />
           </Switch>
         </div>
       </BrowserRouter>
