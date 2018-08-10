@@ -1,0 +1,6 @@
+$test-color: green;
+$exported-color: coral;
+
+:export {
+  exportedColor: $exported-color;
+}

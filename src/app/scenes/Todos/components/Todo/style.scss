@@ -1,0 +1,29 @@
+@import 'styles/abstracts/variables';
+
+%item {
+  transition: 0.4s color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.todo-item {
+  @extend %item;
+
+  color: $test-color;
+
+  &.is-done {
+    color: blue;
+  }
+}
+
+.todo-item--alt {
+  @extend %item;
+
+  color: yellow;
+
+  &.is-done {
+    color: orange;
+  }
+}

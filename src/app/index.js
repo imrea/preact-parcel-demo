@@ -1,6 +1,8 @@
 import { h, render } from 'preact';
 import { Provider } from 'mobx-preact';
 
+import '@styles/main';
+
 import App from '@app/App';
 
 import { rootStore } from '@app/stores';
